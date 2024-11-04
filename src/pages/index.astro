@@ -1,11 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const title = "Yana";
+const title = "Yana Trekkers";
 const today = new Date();
 let year = today.getFullYear();
 ---
 
-<Layout title=`Welcome to ${title}`>
+<Layout title=`Welcome ${title}`>
 	<main>
 		<svg
 			class="astro-a"
@@ -35,7 +35,11 @@ let year = today.getFullYear();
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>Welcome to <span class="text-gradient">{title}</span></h1>
+		<h1>Welcome to a project by
+			<p>
+				<span class="text-gradient">{title}</span>
+		</p>
+			</h1>
 		<p class="instructions" style="text-align: center;">
 			We'll be with you soon !
 		</p>
